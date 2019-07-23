@@ -112,7 +112,6 @@ class Clock extends Canvas {
     this.ctx.beginPath();
     this.ctx.lineWidth = 6 * this.scale;
     this.ctx.lineCap = "round";
-    // 为何选择再上面
     this.ctx.rotate(ONE_RADIAN * 30 * hour + (ONE_RADIAN * 6 * minute) / 12);
     this.ctx.moveTo(0, 10 * this.scale);
     this.ctx.lineTo(0, -this.r / 2);
@@ -126,8 +125,8 @@ class Clock extends Canvas {
     this.ctx.lineWidth = 3 * this.scale;
     this.ctx.lineCap = "round";
     this.ctx.rotate(ONE_RADIAN * 6 * minute + (ONE_RADIAN * 6 * second) / 60);
-    this.ctx.moveTo(0, 10* this.scale);
-    this.ctx.lineTo(0, -this.r + 30* this.scale);
+    this.ctx.moveTo(0, 10 * this.scale);
+    this.ctx.lineTo(0, -this.r + 30 * this.scale);
     this.ctx.stroke();
     this.ctx.restore();
   }
