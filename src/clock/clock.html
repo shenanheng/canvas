@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>时钟的绘制</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .canvas-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #canvas {
+        /* border: 1px solid black; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="400" height="400">该浏览器不支持canvas</canvas>
+    </div>
+  </body>
+</html>
+<script src="./canvas.js"></script>
+<script src="./clock.js"></script>
+<script>
+let clock = new Clock("canvas");
+clock.start(); // 开始
+</script>
