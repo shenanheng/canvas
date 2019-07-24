@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>时钟的绘制</title>
+    <title>倒计时酷炫效果的绘制</title>
     <style>
       * {
         box-sizing: border-box;
@@ -24,7 +24,7 @@
         justify-content: center;
       }
       #canvas {
-        /* border: 1px solid black; */
+        border: 1px solid black;
       }
     </style>
   </head>
@@ -34,9 +34,10 @@
     </div>
   </body>
 </html>
+<!-- 点阵矩形 -->
+<script src="../common/digit.js"></script>
 <script src="../common/canvas.js"></script>
-<script src="./clock.js"></script>
+<script src="./countDown.js"></script>
 <script>
-let clock = new Clock("canvas");
-clock.start(); // 开始
+let countDown = new CountDown("canvas");
 </script>
