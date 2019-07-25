@@ -30,14 +30,21 @@
   </head>
   <body>
     <div class="canvas-wrap">
-      <canvas id="canvas" width="400" height="400">该浏览器不支持canvas</canvas>
+      <canvas id="canvas" width="1000" height="500"
+        >该浏览器不支持canvas</canvas
+      >
     </div>
   </body>
 </html>
+<!-- 库的引入 -->
+<script src="../libs/moment.js"></script>
+<!-- 常量的引入 -->
+<script src="../common/constant.js"></script>
 <!-- 点阵矩形 -->
 <script src="../common/digit.js"></script>
 <script src="../common/canvas.js"></script>
 <script src="./countDown.js"></script>
 <script>
-let countDown = new CountDown("canvas");
+  let countDown = new CountDown("canvas", digit);
+  countDown.start();
 </script>
